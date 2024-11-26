@@ -1,33 +1,7 @@
-# list_1 = []
-# for i in range(0, 5):
-#     inp = int(input("Enter a number: "))
-#     list_1.append(inp) 
-#     i += 1
-
-#input from user and append to list
-list_1 = [] 
-for i in range(0, 5):
-    inp = int(input("Enter a number: "))
-    list_1.append(inp) 
-    i += 1
-
-i = 0 
-while i < len(list_1):
-    j = i +1
-    while j < len(list_1):
-        if list_1[i] == list_1[j]:
-           del list_1[j]
-        else:
-            j += 1
-    i += 1
+tuple_1 = ("1", "2", "3", "4", "5")
+list_1 = list(tuple_1)  
+list_1.append("6")
+list_1.remove("5")  
 print(list_1)
-
-
-
-
-
-
-
-
-
-
+tuple_1 = tuple(list_1)
+print(type(tuple_1))
